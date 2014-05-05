@@ -1,0 +1,1406 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/NetworkScience"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/NetworkScience"
+     versionIRI="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/NetworkScience/0.2">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An ontology used in the filed of Network Science, with the purpose of classyginf different types of complex networks.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AlternativeBarabasi-Albert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlternativeOverConnected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlternativeOverConnected2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlternativeScatteredFragments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlternativeSingleHub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AncientWorld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Barabasi-Albert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Betweenness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BetweennessConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConnectedComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Core&amp;PeripheryStrucuture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorePeriphery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Density"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DolphinSocialNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erdos-Renyi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EthernetNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExponentialDistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_Graph_Properties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighPositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homophily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowPositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumPositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleHub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleHubStrucuture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleNodeBetweennessConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleWeaklyConnectedComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Named_Graphs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NegativeModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoHomophily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoNodeBetweennessConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NoSmallWorldPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneWeaklyConnectedComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OverConnected"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParetoDistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phenomena"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoissonDistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Random"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScatteredFragments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleHub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleHubStrucuture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleNodeBetweennessConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SmallWorldPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StanleyMilgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StructureType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Top20Banks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UniformDistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryHighClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryHighDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryHighPositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryLowClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryLowDensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeryLowPositiveModularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WWW"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WattsStrogatz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeaklyConnectedComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesHomophily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YesSmallWorldPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBetweenness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClusteringCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDensity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDistributionOfDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModularity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhenomena"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStructure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#averagePathLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfNodes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExampleGoodExchange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExampleOverConnected"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AlternativeBarabasi-Albert"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPhenomena"/>
+                <Class IRI="#YesHomophily"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPhenomena"/>
+                <Class IRI="#YesSmallWorldPhenomenon"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AlternativeOverConnected"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasClusteringCoefficient"/>
+                <Class IRI="#VeryHighClusteringCoefficient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#UniformDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasModularity"/>
+                <Class IRI="#VeryLowPositiveModularity"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AlternativeOverConnected2"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#averagePathLength"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:double"/>
+                    <FacetRestriction facet="&xsd;maxInclusive">
+                        <Literal datatypeIRI="&rdf;PlainLiteral">1.5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#numberOfNodes"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:long"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&rdf;PlainLiteral">10000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AlternativeScatteredFragments"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasClusteringCoefficient"/>
+                <Class IRI="#VeryLowClusteringCoefficient"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#PoissonDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasModularity"/>
+                <Class IRI="#HighPositiveModularity"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AlternativeSingleHub"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBetweenness"/>
+                <Class IRI="#SingleNodeBetweennessConcentration"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Barabasi-Albert"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#ParetoDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CorePeriphery"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Barabasi-Albert"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStructure"/>
+                <Class IRI="#Core&amp;PeripheryStrucuture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GoodExchange"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#averagePathLength"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:double"/>
+                    <FacetRestriction facet="&xsd;maxInclusive">
+                        <Literal datatypeIRI="&rdf;PlainLiteral">3</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MultipleHub"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Barabasi-Albert"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStructure"/>
+                <Class IRI="#MultipleHubStrucuture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OverConnected"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDensity"/>
+                <Class IRI="#VeryHighDensity"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#UniformDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Random"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#UniformDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPhenomena"/>
+                <Class IRI="#NoSmallWorldPhenomenon"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ScatteredFragments"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#MultipleWeaklyConnectedComponents"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SingleHub"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Barabasi-Albert"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasStructure"/>
+                <Class IRI="#SingleHubStrucuture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WattsStrogatz"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Graph"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponents"/>
+                <Class IRI="#OneWeaklyConnectedComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasDistributionOfDegree"/>
+                <Class IRI="#UniformDistributionOfDegree"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPhenomena"/>
+                <Class IRI="#YesSmallWorldPhenomenon"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasClusteringCoefficient"/>
+            <Class IRI="#VeryLowClusteringCoefficient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#MultipleWeaklyConnectedComponents"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#PoissonDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModularity"/>
+            <Class IRI="#HighPositiveModularity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasClusteringCoefficient"/>
+            <Class IRI="#VeryLowClusteringCoefficient"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#MultipleWeaklyConnectedComponents"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#PoissonDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AncientWorld"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasModularity"/>
+            <Class IRI="#HighPositiveModularity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Betweenness"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BetweennessConcentration"/>
+        <Class IRI="#Betweenness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClusteringCoefficient"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConnectedComponents"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Core&amp;PeripheryStrucuture"/>
+        <Class IRI="#StructureType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Density"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistributionOfDegree"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <Class IRI="#YesHomophily"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <Class IRI="#YesSmallWorldPhenomenon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#MultipleHubStrucuture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <ObjectUnionOf>
+                <Class IRI="#Phenomena"/>
+                <Class IRI="#YesHomophily"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <ObjectUnionOf>
+                <Class IRI="#Phenomena"/>
+                <Class IRI="#YesHomophily"/>
+                <Class IRI="#YesSmallWorldPhenomenon"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#MultipleHubStrucuture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <Class IRI="#NoSmallWorldPhenomenon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erdos-Renyi"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <ObjectUnionOf>
+                <Class IRI="#NoSmallWorldPhenomenon"/>
+                <Class IRI="#Phenomena"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBetweenness"/>
+            <Class IRI="#SingleNodeBetweennessConcentration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#SingleHubStrucuture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasBetweenness"/>
+            <Class IRI="#SingleNodeBetweennessConcentration"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthernetNetwork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#SingleHubStrucuture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExponentialDistributionOfDegree"/>
+        <Class IRI="#DistributionOfDegree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graph"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <Class IRI="#Phenomena"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graph"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#General_Graph_Properties"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graph"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#averagePathLength"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graph"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#numberOfNodes"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighDensity"/>
+        <Class IRI="#Density"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighPositiveModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homophily"/>
+        <Class IRI="#Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowDensity"/>
+        <Class IRI="#Density"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowPositiveModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDensity"/>
+        <Class IRI="#Density"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumPositiveModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modularity"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipleHubStrucuture"/>
+        <Class IRI="#StructureType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipleNodeBetweennessConcentration"/>
+        <Class IRI="#BetweennessConcentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipleWeaklyConnectedComponents"/>
+        <Class IRI="#WeaklyConnectedComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Named_Graphs"/>
+        <Class IRI="#Graph"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NegativeModularity"/>
+        <Class IRI="#Modularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoHomophily"/>
+        <Class IRI="#Homophily"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoNodeBetweennessConcentration"/>
+        <Class IRI="#BetweennessConcentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NoSmallWorldPhenomenon"/>
+        <Class IRI="#SmallWorldPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneWeaklyConnectedComponent"/>
+        <Class IRI="#WeaklyConnectedComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParetoDistributionOfDegree"/>
+        <Class IRI="#ExponentialDistributionOfDegree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoissonDistributionOfDegree"/>
+        <Class IRI="#DistributionOfDegree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PositiveModularity"/>
+        <Class IRI="#Modularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleHubStrucuture"/>
+        <Class IRI="#StructureType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleNodeBetweennessConcentration"/>
+        <Class IRI="#BetweennessConcentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SmallWorldPhenomenon"/>
+        <Class IRI="#Phenomena"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <Class IRI="#YesSmallWorldPhenomenon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StanleyMilgram"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPhenomena"/>
+            <ObjectUnionOf>
+                <Class IRI="#Phenomena"/>
+                <Class IRI="#YesSmallWorldPhenomenon"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructureType"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasClusteringCoefficient"/>
+            <Class IRI="#VeryHighClusteringCoefficient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDensity"/>
+            <Class IRI="#VeryHighDensity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModularity"/>
+            <Class IRI="#VeryLowPositiveModularity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasClusteringCoefficient"/>
+            <Class IRI="#VeryHighClusteringCoefficient"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDensity"/>
+            <Class IRI="#VeryHighDensity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#UniformDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Top20Banks"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasModularity"/>
+            <Class IRI="#VeryLowPositiveModularity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UniformDistributionOfDegree"/>
+        <Class IRI="#DistributionOfDegree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryHighClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryHighDensity"/>
+        <Class IRI="#Density"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryHighPositiveModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryLowClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryLowDensity"/>
+        <Class IRI="#Density"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeryLowPositiveModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <Class IRI="#Named_Graphs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#Core&amp;PeripheryStrucuture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDistributionOfDegree"/>
+            <Class IRI="#ParetoDistributionOfDegree"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WWW"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasStructure"/>
+            <Class IRI="#Core&amp;PeripheryStrucuture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeaklyConnectedComponents"/>
+        <Class IRI="#ConnectedComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesHomophily"/>
+        <Class IRI="#Homophily"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YesSmallWorldPhenomenon"/>
+        <Class IRI="#SmallWorldPhenomenon"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AncientWorld"/>
+        <Class IRI="#DolphinSocialNetwork"/>
+        <Class IRI="#Erdos-Renyi"/>
+        <Class IRI="#EthernetNetwork"/>
+        <Class IRI="#StanleyMilgram"/>
+        <Class IRI="#Top20Banks"/>
+        <Class IRI="#WWW"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Core&amp;PeripheryStrucuture"/>
+        <Class IRI="#MultipleHubStrucuture"/>
+        <Class IRI="#SingleHubStrucuture"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorePeriphery"/>
+        <Class IRI="#MultipleHub"/>
+        <Class IRI="#SingleHub"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExponentialDistributionOfDegree"/>
+        <Class IRI="#PoissonDistributionOfDegree"/>
+        <Class IRI="#UniformDistributionOfDegree"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighClusteringCoefficient"/>
+        <Class IRI="#LowClusteringCoefficient"/>
+        <Class IRI="#MediumClusteringCoefficient"/>
+        <Class IRI="#VeryHighClusteringCoefficient"/>
+        <Class IRI="#VeryLowClusteringCoefficient"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighDensity"/>
+        <Class IRI="#LowDensity"/>
+        <Class IRI="#MediumDensity"/>
+        <Class IRI="#VeryHighDensity"/>
+        <Class IRI="#VeryLowDensity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HighPositiveModularity"/>
+        <Class IRI="#LowPositiveModularity"/>
+        <Class IRI="#MediumPositiveModularity"/>
+        <Class IRI="#VeryHighPositiveModularity"/>
+        <Class IRI="#VeryLowPositiveModularity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MultipleNodeBetweennessConcentration"/>
+        <Class IRI="#NoNodeBetweennessConcentration"/>
+        <Class IRI="#SingleNodeBetweennessConcentration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MultipleWeaklyConnectedComponents"/>
+        <Class IRI="#OneWeaklyConnectedComponent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NegativeModularity"/>
+        <Class IRI="#PositiveModularity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NoHomophily"/>
+        <Class IRI="#YesHomophily"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NoSmallWorldPhenomenon"/>
+        <Class IRI="#YesSmallWorldPhenomenon"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponents"/>
+            <Class IRI="#OneWeaklyConnectedComponent"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#ExampleGoodExchange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Top20Banks"/>
+        <NamedIndividual IRI="#ExampleOverConnected"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePathLength"/>
+        <NamedIndividual IRI="#ExampleGoodExchange"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePathLength"/>
+        <NamedIndividual IRI="#ExampleOverConnected"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numberOfNodes"/>
+        <NamedIndividual IRI="#ExampleOverConnected"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20000</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBetweenness"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClusteringCoefficient"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComponents"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDensity"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDistributionOfDegree"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasModularity"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStructure"/>
+        <ObjectProperty IRI="#hasProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasClusteringCoefficient"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasComponents"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDensity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDistributionOfDegree"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasModularity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasStructure"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasPhenomena"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasProperty"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBetweenness"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClusteringCoefficient"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComponents"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDensity"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDistributionOfDegree"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModularity"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhenomena"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#Graph"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBetweenness"/>
+        <Class IRI="#Betweenness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClusteringCoefficient"/>
+        <Class IRI="#ClusteringCoefficient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComponents"/>
+        <Class IRI="#ConnectedComponents"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDensity"/>
+        <Class IRI="#Density"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDistributionOfDegree"/>
+        <Class IRI="#DistributionOfDegree"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModularity"/>
+        <Class IRI="#Modularity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPhenomena"/>
+        <Class IRI="#Phenomena"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#General_Graph_Properties"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStructure"/>
+        <Class IRI="#StructureType"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighClusteringCoefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of the clustering coefficient is:
+0.6&lt; value &lt;= 0.8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of density is:
+0.6&lt;value &lt;= 0.8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LowClusteringCoefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of the clustering coefficient is:
+0.2&lt; value &lt;= 0.4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LowDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of density is:
+0.2&lt;value &lt;= 0.4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MediumClusteringCoefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of the clustering coefficient is:
+0.4&lt; value &lt;= 0.6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MediumDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of density is:
+0.4&lt; value &lt;= 0.6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VeryHighClusteringCoefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of the clustering coefficient is:
+0.8&lt; value &lt;= 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VeryHighDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of density is:
+0.8&lt;value &lt;= 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VeryLowClusteringCoefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of the clustering coefficient is:
+0&lt; value &lt;= 0.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VeryLowDensity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">When the value of density is:
+0&lt;value &lt;= 0.2</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
