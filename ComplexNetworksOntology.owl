@@ -1,0 +1,1427 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ComplexNetworksOntology "http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworkOntology#"
+     xml:base="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworkOntology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ComplexNetworksOntology="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology/0.4"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasBetweennessConcentration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasBetweennessConcentration">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasDistributionOfDegree -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasDistributionOfDegree">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&ComplexNetworksOntology;DistributionOfDegree"/>
+        <rdfs:domain rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasGraphClusteringCoefficient -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasGraphClusteringCoefficient">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:domain rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasGraphDensity -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasGraphDensity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:domain rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasGraphModularity -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasGraphModularity">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&ComplexNetworksOntology;GraphModularity"/>
+        <rdfs:domain rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasMetric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasMetric -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasMetric">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasNumberOfConnectedComponnets -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasNumberOfConnectedComponnets">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+        <rdfs:range rdf:resource="&ComplexNetworksOntology;NumberOfConnectedComponents"/>
+        <rdfs:subPropertyOf rdf:resource="&ComplexNetworksOntology;hasStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasPhenomena -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasPhenomena">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="&ComplexNetworksOntology;hasStructure">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasGraphAveragePathLength -->
+
+    <owl:DatatypeProperty rdf:about="&ComplexNetworksOntology;hasGraphAveragePathLength"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#hasGraphNumberOfNodes -->
+
+    <owl:DatatypeProperty rdf:about="&ComplexNetworksOntology;hasGraphNumberOfNodes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#AlternativeOverConnected -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;AlternativeOverConnected">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowPositiveGraphModularity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#AlternativeOverConnected2 -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;AlternativeOverConnected2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphAveragePathLength"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive>1.5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphNumberOfNodes"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;long"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive>10000</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#AlternativeScatteredFragments -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;AlternativeScatteredFragments">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;PoissonDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighPositiveGraphModularity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#AlternativeSingleHubBarabasiAlbert -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;AlternativeSingleHubBarabasiAlbert">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasBetweennessConcentration"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SingleNodeBetweennessConcentration"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#AncientWorld -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;AncientWorld">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleWeaklyConnectedComponnets"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighPositiveGraphModularity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;PoissonDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;PoissonDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleWeaklyConnectedComponnets"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighPositiveGraphModularity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&ComplexNetworksOntology;DolphinSocialNetwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#BarabasiAlbert -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;BarabasiAlbert">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#BetweennessConcentration -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;BetweennessConcentration">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#Core&amp;PeripheryBarabasiAlbert -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;Core&amp;PeripheryBarabasiAlbert">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;BarabasiAlbert"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;Core&amp;PeripheryStructureType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#Core&amp;PeripheryStructureType -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;Core&amp;PeripheryStructureType">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;StructureType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#DistributionOfDegree -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;DistributionOfDegree">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#DolphinSocialNetwork -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;DolphinSocialNetwork">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleHubStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;HomophilyPhenomena"/>
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;Phenomena"/>
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;SmallWorldPhenomena"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;HomophilyPhenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;HomophilyPhenomena"/>
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;Phenomena"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleHubStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SmallWorldPhenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ErdosRenyi -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;ErdosRenyi">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#EthernetNetwork -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;EthernetNetwork">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasBetweennessConcentration"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SingleNodeBetweennessConcentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasBetweennessConcentration"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;SingleNodeBetweennessConcentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;SingleHubStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SingleHubStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;SingleHubStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ExponentialDistributionOfDegree -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;ExponentialDistributionOfDegree">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;DistributionOfDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GeneralGraphMetrics -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GeneralGraphMetrics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GoodExchange -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GoodExchange">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphAveragePathLength"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="&xsd;double"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive>3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GraphClusteringCoefficient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;HighGraphClusteringCoefficient"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;LowGraphClusteringCoefficient"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;MediumGraphClusteringCoefficient"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GeneralGraphMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GraphDensity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;HighGraphDensity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;LowGraphDensity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;MediumGraphDensity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighGraphDensity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowGraphDensity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GeneralGraphMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GraphModularity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;HighPositiveGraphModularity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;LowPositiveGraphModularity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;MediumPositiveGraphModularity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;NegativeGraphModularity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighPositiveGraphModularity"/>
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowPositiveGraphModularity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GeneralGraphMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GraphStructure -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GraphStructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#GraphTypes -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;GraphTypes">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasStructure"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;GraphStructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphAveragePathLength"/>
+                <owl:someValuesFrom rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasMetric"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;GeneralGraphMetrics"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphNumberOfNodes"/>
+                <owl:someValuesFrom rdf:resource="&xsd;long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;Phenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#HighGraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;HighGraphClusteringCoefficient">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:comment>When the value of the graph clustering coefficient is:
+0.6&lt; value &lt;= 0.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#HighGraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;HighGraphDensity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:comment>When the value of the graph density is:
+0.6&lt; value &lt;= 0.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#HighPositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;HighPositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is:
+0.6&lt; value &lt;= 0.8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#HomophilyPhenomena -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;HomophilyPhenomena">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;Phenomena"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#LowGraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;LowGraphClusteringCoefficient">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:comment>When the value of the graph clustering coefficient is:
+0.2&lt; value &lt;= 0.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#LowGraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;LowGraphDensity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:comment>When the value of the graph density is:
+0.2&lt; value &lt;= 0.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#LowPositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;LowPositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is:
+0.2&lt; value &lt;= 0.4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MediumGraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MediumGraphClusteringCoefficient">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:comment>When the value of the graph clustering coefficient is:
+0.4&lt; value &lt;= 0.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MediumGraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MediumGraphDensity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:comment>When the value of the graph density is:
+0.4&lt; value &lt;= 0.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MediumPositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MediumPositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is:
+0.4&lt; value &lt;= 0.6</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MultipleHubBarabasiAlbert -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MultipleHubBarabasiAlbert">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;BarabasiAlbert"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleHubStructureType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MultipleHubStructureType -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MultipleHubStructureType">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;StructureType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MultipleNodeBetweennessConcentration -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MultipleNodeBetweennessConcentration">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;BetweennessConcentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#MultipleWeaklyConnectedComponnets -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;MultipleWeaklyConnectedComponnets">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;WeaklyConnectedComponnet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#NamedGraphs -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;NamedGraphs">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#NegativeGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;NegativeGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is negative
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#NoNodeBetweennessConcentration -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;NoNodeBetweennessConcentration">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;BetweennessConcentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#NumberOfConnectedComponents -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;NumberOfConnectedComponents">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#OneWeaklyConnectedComponnet -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;OneWeaklyConnectedComponnet">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;WeaklyConnectedComponnet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#OverConnected -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;OverConnected">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphDensity"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphDensity"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ParetoDistributionOfDegree -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;ParetoDistributionOfDegree">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;ExponentialDistributionOfDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#Phenomena -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;Phenomena"/>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#PoissonDistributionOfDegree -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;PoissonDistributionOfDegree">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;DistributionOfDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#PositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;PositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphModularity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#Random -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;Random">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ScatteredFragments -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;ScatteredFragments">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;MultipleWeaklyConnectedComponnets"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#SingleHubBarabasiAlbert -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;SingleHubBarabasiAlbert">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;BarabasiAlbert"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SingleHubStructureType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#SingleHubStructureType -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;SingleHubStructureType">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;StructureType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#SingleNodeBetweennessConcentration -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;SingleNodeBetweennessConcentration">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;BetweennessConcentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#SmallWorldPhenomena -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;SmallWorldPhenomena">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;Phenomena"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#StanleyMilgram -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;StanleyMilgram">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SmallWorldPhenomena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;Phenomena"/>
+                            <rdf:Description rdf:about="&ComplexNetworksOntology;SmallWorldPhenomena"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#StructureType -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;StructureType">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#Top20Banks -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;Top20Banks">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowPositiveGraphModularity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphDensity"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphClusteringCoefficient"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphDensity"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryHighGraphDensity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasGraphModularity"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;VeryLowPositiveGraphModularity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#UniformDistributionOfDegree -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;UniformDistributionOfDegree">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;DistributionOfDegree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryHighGraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:comment>When the value of the graph clustering coefficient is:
+0.8&lt; value &lt;= 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryHighGraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryHighGraphDensity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:comment>When the value of the graph density is:
+0.8&lt; value &lt;= 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryHighPositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryHighPositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is:
+0.8&lt; value &lt;= 1</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryLowGraphClusteringCoefficient -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphClusteringCoefficient"/>
+        <rdfs:comment>When the value of the graph clustering coefficient is:
+0&lt; value &lt;= 0.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryLowGraphDensity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryLowGraphDensity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphDensity"/>
+        <rdfs:comment>When the value of the graph density is:
+0&lt; value &lt;= 0.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#VeryLowPositiveGraphModularity -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;VeryLowPositiveGraphModularity">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
+        <rdfs:comment>When the value of the graph modularity is:
+0&lt; value &lt;= 0.2</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#WWW -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;WWW">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NamedGraphs"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;Core&amp;PeripheryStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworks#hasStructureType"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;Core&amp;PeripheryStructureType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                <owl:allValuesFrom rdf:resource="&ComplexNetworksOntology;ParetoDistributionOfDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#WattsStrogatz -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;WattsStrogatz">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&ComplexNetworksOntology;GraphTypes"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasDistributionOfDegree"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasPhenomena"/>
+                        <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;SmallWorldPhenomena"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#WeaklyConnectedComponnet -->
+
+    <owl:Class rdf:about="&ComplexNetworksOntology;WeaklyConnectedComponnet">
+        <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;NumberOfConnectedComponents"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ExGoodExchange -->
+
+    <owl:NamedIndividual rdf:about="&ComplexNetworksOntology;ExGoodExchange">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ComplexNetworksOntology;hasNumberOfConnectedComponnets"/>
+                <owl:someValuesFrom rdf:resource="&ComplexNetworksOntology;OneWeaklyConnectedComponnet"/>
+            </owl:Restriction>
+        </rdf:type>
+        <ComplexNetworksOntology:hasGraphAveragePathLength>2.7</ComplexNetworksOntology:hasGraphAveragePathLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/4/ComplexNetworksOntology#ExOverConnected -->
+
+    <owl:NamedIndividual rdf:about="&ComplexNetworksOntology;ExOverConnected">
+        <rdf:type rdf:resource="&ComplexNetworksOntology;Top20Banks"/>
+        <ComplexNetworksOntology:hasGraphNumberOfNodes>20000</ComplexNetworksOntology:hasGraphNumberOfNodes>
+        <ComplexNetworksOntology:hasGraphAveragePathLength>1.4</ComplexNetworksOntology:hasGraphAveragePathLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;HighGraphClusteringCoefficient"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;LowGraphClusteringCoefficient"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MediumGraphClusteringCoefficient"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighGraphClusteringCoefficient"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowGraphClusteringCoefficient"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;Core&amp;PeripheryBarabasiAlbert"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MultipleHubBarabasiAlbert"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;SingleHubBarabasiAlbert"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;ExponentialDistributionOfDegree"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;PoissonDistributionOfDegree"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;UniformDistributionOfDegree"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MultipleNodeBetweennessConcentration"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;NoNodeBetweennessConcentration"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;SingleNodeBetweennessConcentration"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;HighPositiveGraphModularity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;LowPositiveGraphModularity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MediumPositiveGraphModularity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighPositiveGraphModularity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowPositiveGraphModularity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;Core&amp;PeripheryStructureType"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MultipleHubStructureType"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;SingleHubStructureType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&ComplexNetworksOntology;HighGraphDensity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;LowGraphDensity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;MediumGraphDensity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryHighGraphDensity"/>
+            <rdf:Description rdf:about="&ComplexNetworksOntology;VeryLowGraphDensity"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
