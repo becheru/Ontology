@@ -872,6 +872,7 @@
 
     <owl:Class rdf:about="&ComplexNetworksOntology;NegativeGraphModularity">
         <rdfs:subClassOf rdf:resource="&ComplexNetworksOntology;GraphModularity"/>
+        <owl:disjointWith rdf:resource="&ComplexNetworksOntology;PositiveGraphModularity"/>
         <rdfs:comment>When the value of the graph modularity is negative
 </rdfs:comment>
     </owl:Class>
